@@ -1,0 +1,14 @@
+[package]
+name = "connect"
+version = "0.1.0"
+license = "Apache-2.0"
+edition = "2021"
+
+[dependencies]
+anyhow = { version = "1.0.81" }
+bitcoin = { version = "0.31.1", features = ["default", "bitcoinconsensus-std", "serde"] }
+bitcoincore-rpc = { version = "0.18.0" }
+clap = { version = "4.5.2", features = ["derive"] }
+env_logger = { version = "0.11.3" }
+log = { version = "0.4.21" }
+bitcoind = { version = "0.34.1", features = ["25_1"] }
